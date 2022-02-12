@@ -52,6 +52,7 @@ class SubscriptionClient {
           if (commitment != null)
             <String, String>{
               'commitment': commitment.value,
+              'encoding': 'base64',
             },
         ],
       );
