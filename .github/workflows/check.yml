@@ -12,14 +12,14 @@ jobs:
   check:
     runs-on: ubuntu-latest
     env:
-      DEVNET_RPC_URL: "http://solana:8899"
-      DEVNET_WEBSOCKET_URL: "ws://solana:8900"
+      DEVNET_RPC_URL: "http://koii:8899"
+      DEVNET_WEBSOCKET_URL: "ws://koii:8900"
     container:
       image: google/dart:latest
     services:
-      solana:
-        image: solanalabs/solana:v1.8.11
-        options: --entrypoint="solana-test-validator"
+      koii:
+        image: koiilabs/koii:v1.8.11
+        options: --entrypoint="koii-test-validator"
     steps:
       - uses: actions/checkout@v2
       - run: echo "$HOME/.pub-cache/bin" >> $GITHUB_PATH

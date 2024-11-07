@@ -1,4 +1,4 @@
-name: dart-solana-lib
+name: dart-koii-lib
 
 packages:
   - 'packages/**'
@@ -28,10 +28,10 @@ scripts:
 
   coverage: 
     run: |
-      melos exec --scope="solana" -- dart run coverage:format_coverage -i coverage -o coverage/coverage.lcov --lcov \
+      melos exec --scope="koii" -- dart run coverage:format_coverage -i coverage -o coverage/coverage.lcov --lcov \
         --report-on=lib \
         --packages=.packages \
-      && melos exec --scope="solana" -- "remove_from_coverage -f coverage/coverage.lcov -r '\.(g|freezed)\.dart$'"
+      && melos exec --scope="koii" -- "remove_from_coverage -f coverage/coverage.lcov -r '\.(g|freezed)\.dart$'"
     select-package:
       dir-exists:
         - test    

@@ -3,10 +3,10 @@ import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:build/build.dart';
 // ignore: implementation_imports
-import 'package:solana/src/rpc/rpc_client_annotation.dart';
+import 'package:koii/src/rpc/rpc_client_annotation.dart';
 import 'package:source_gen/source_gen.dart';
 
-class ClientGenerator extends GeneratorForAnnotation<SolanaRpcClient> {
+class ClientGenerator extends GeneratorForAnnotation<KoiiRpcClient> {
   @override
   String generateForAnnotatedElement(
     Element element,
