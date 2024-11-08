@@ -1,1 +1,1 @@
-const int lamportsPerSol = 1000000000;
+const int lamportsPerKoii = 1000000000;
